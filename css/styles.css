@@ -41,7 +41,16 @@ body {
   z-index: 1;
 }
 
+.nav i {
+  font-size: 1.2vw;
+  font-weight: 800;
+  display: none;
+
+}
+
+
 .nav h2 {
+  display: inline-block;
   font-size: 15vh;
   font-family: 'Noto Serif Devanagari', serif;
   padding: 0 20px;
@@ -64,7 +73,7 @@ a {
   list-style: none;
   margin: 0 10px;
   background-color: black;
-  font-size: 3vh;
+  font-size: 2vmax;
   text-decoration: none;
 }
 
@@ -158,12 +167,12 @@ h1 {
 
 
 #page2 .content img {
-  height: 66.00660066006601vh;
+  height: 25.00660066006601vmax;
   border-radius: 6.600660066006601vh;
 
   padding: 4.9504950495049505vh;
   margin-left: 3.3003300330033003vh;
-  transform: translateY(-10%);
+  transform: translateY(-20%);
 
 }
 
@@ -209,7 +218,7 @@ h1 {
   height: 70%;
   display: flex;
   gap: 4.9504950495049505vh;
-  font-size: 2.6402640264026402vh;
+  font-size: 1.502640264026402vmax;
   flex-wrap: wrap;
 
   align-items: center;
@@ -379,7 +388,7 @@ textarea {
 
 @media(max-width:868px) {
   p {
-    font-size: 1.9801980198019802vh;
+    font-size: 1.9801980198019802vw;
     margin: 0px
   }
 
@@ -392,7 +401,7 @@ textarea {
   }
 
   h1 {
-    font-size: 33.00330033003301vh;
+    font-size: 20.00330033003301vh;
     margin: 33.00330033003301vh 0;
   }
 
@@ -445,6 +454,15 @@ textarea {
     overflow-x: hidden;
   }
 
+  p {
+    font-size: 2.801980198019802vw;
+
+  }
+
+  h2 {
+    font-size: 2vmax;
+  }
+
   #page2 {
     margin: 0px;
     margin-top: 0px;
@@ -453,7 +471,7 @@ textarea {
 
 
   #page2 .content img {
-    height: 33.00330033003301vh;
+    height: 35.00330033003301vh;
     border-radius: 20px;
 
     padding: 0px;
@@ -535,4 +553,24 @@ footer {
   .body {
     overflow-x: hidden;
   }
+}
+
+@media (max-width:680px) {
+  .nav {
+    color: white;
+  }
+
+
+  .nav a {
+    font-size: 3vw;
+    display: none;
+  }
+
+  .nav i {
+    display: block;
+    font-size: 6vw;
+
+
+  }
+
 }
